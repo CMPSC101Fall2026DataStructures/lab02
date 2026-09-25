@@ -1,6 +1,6 @@
 name: Code Review
 description: A code review conducted with a Technical Leader (TL) or the course instructor.
-title: "Code Review: Lab 2, Data Structures"
+title: "Code Review: Lab 2, Data Frames, Statistics and Visualization in R"
 body:
   - type: markdown
     attributes:
@@ -40,12 +40,14 @@ body:
       label: Code walkthrough
       description: Check each topic the author explained adequately
       options:
-        - label: "Program 1: The author can explain how to modify a dictionary by adding, removing, and changing key-value pairs"
-        - label: "Program 2: The author can explain how to print all keys and values in a list or dictionary"
-        - label: "The author can explain the difference between a `set` and a `list` and when to use each"
-        - label: "The author can explain the difference in code to call a dictionary element and the code to call list element"
-        - label: "The author can explain what the three parts of a list comprehension are"
-        - label: "The author can explain what the three parts of a dictionary comprehension are"
+        - label: "The author can explain how they built a data frame with `data.frame()` and how to access a specific row, column, and logical subset of it"
+        - label: "The author can explain the difference between dropping rows with missing data and imputing them with `na.rm = TRUE` or a mean fill, and when each strategy is appropriate"
+        - label: "The author can explain the difference between `cat()` and `print()` and when to use each"
+        - label: "The author can explain the difference between a boxplot, histogram, and scatterplot, and when to use each"
+        - label: "The author can explain what print(students$Gpa) prints."
+        - label: "The author can explain what the `summary()` function provides about a dataset and how to interpret it"
+        - label: "The author explored the Shiny app and can explain how choosing a different dataset or plot type changes the reactive data frame passed to the plot"
+        - label: "The author described their process well, communicating confidence and understanding of their own code"
   - type: textarea
     attributes:
       label: The Good, The Bad, The Ugly
