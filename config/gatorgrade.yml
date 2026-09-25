@@ -1,0 +1,103 @@
+# perform checks on a file
+
+# check the technical writing for various characteristics
+- writing/reflection.md:
+    - description: Ensure that writing/reflection.md file exists.
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Add your name and then delete the 'Add Your Name Here' prompt in writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# check the code for various characteristics
+- src/program1.py:
+    - description: src/program1.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program1.py -> Complete all TODOs and then remove these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program1.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# check the code for various characteristics
+- src/program2.py:
+    - description: src/program2.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program2.py -> Complete all TODOs and then remove these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program2.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# check the code for various characteristics
+- src/program3.py:
+    - description: src/program3.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program3.py -> Complete all TODOs and then remove these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program3.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# check the code for various characteristics
+- src/program4.py:
+    - description: src/program4.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program4.py -> Complete all TODOs and then remove these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program4.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# check the code for various characteristics
+- src/program5.py:
+    - description: src/program5.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program5.py -> Complete all TODOs and then remove these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program5.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true

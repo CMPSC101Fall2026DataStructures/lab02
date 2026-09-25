@@ -1,0 +1,63 @@
+name: Code Review
+description: A code review conducted with a Technical Leader (TL) or the course instructor.
+title: "Code Review: Lab 2, Data Structures"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this out with the programmer present. Leave a box unchecked when the work does
+        not meet it. An unchecked box is information, not a punishment.
+  - type: input
+    attributes:
+      label: Reviewer
+      description: The GitHub username of the TL or instructor conducting this review
+      placeholder: your-github-username
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Functional requirements
+      description: Check each of the following satisfied functional requirements for one randomly chosen file in src/
+      options:
+        - label: "Code solves the issue presented"
+        - label: "Code functions, even if not fully solving the issue presented"
+        - label: "Performance of the code is acceptable"
+  - type: checkboxes
+    attributes:
+      label: Code style and legibility
+      description: Check each of the following checkboxes that describe code legibility
+      options:
+        - label: The code contains comments
+        - label: Variable names are accurate and appropriate
+        - label: The code is easy to read
+        - label: The code is formatted correctly
+  - type: markdown
+    attributes:
+      value: |
+        Conduct a short walkthrough with the programmer, marking the topics appropriately explained.
+  - type: checkboxes
+    attributes:
+      label: Code walkthrough
+      description: Check each topic the author explained adequately
+      options:
+        - label: "Program 1: The author can explain what `print("=" * 50)` does"
+        - label: "Program 2: The author can explain how to print all keys and values in a list or dictionary"
+        - label: "The author can explain the difference between a `set` and a `list` and when to use each"
+        - label: "The author can explain the difference in code to call a dictionary element and the code to call list element"
+        - label: "The author can explain what the three parts of a list comprehension are"
+        - label: "The author can explain what the three parts of a dictionary comprehension are"
+  - type: textarea
+    attributes:
+      label: The Good, The Bad, The Ugly
+      description: Write a short note with at least 3 aspects done well, and 3 aspects on which the code could be improved
+      value: |
+        #### Positives
+        1.
+        2.
+        3.
+        #### Improvements
+        1.
+        2.
+        3.
+    validations:
+      required: true
