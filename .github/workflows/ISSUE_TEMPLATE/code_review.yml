@@ -40,7 +40,7 @@ body:
       label: Code walkthrough
       description: Check each topic the author explained adequately
       options:
-        - label: "Program 1: The author can explain what `print("=" * 50)` does"
+        - label: "Program 1: The author can explain how to modify a dictionary by adding, removing, and changing key-value pairs"
         - label: "Program 2: The author can explain how to print all keys and values in a list or dictionary"
         - label: "The author can explain the difference between a `set` and a `list` and when to use each"
         - label: "The author can explain the difference in code to call a dictionary element and the code to call list element"
